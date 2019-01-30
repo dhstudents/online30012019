@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    window.onload = init;
+
+
+
+
+    function init() {
+        var dd = new Date();
+        var hh = dd.getHours();
+        var img = new Image();
+
+        if (hh >= 20 && hh <= 22) { // 
+            img.src = "noon.png"
+        } else if (hh > 10 && hh <= 17) {
+            img.src = "noon.png"
+        }
+
+
+var bb = document.querySelector("body");
+// lalala
+        document.body.appendChild(img);
+    }
+    
+    
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
